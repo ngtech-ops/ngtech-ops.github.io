@@ -11,7 +11,7 @@
   --line-2:    #232736;
   --ink:       #e9ecf3;
   --ink-2:     #a2a8b8;
-  --ink-3:     #6a7186;
+  --ink-3:     #7f8698;
   --mint:      #46f0c0;
   --mint-dim:  #2bb894;
   --violet:    #8f7dff;
@@ -138,19 +138,19 @@ main,header,footer{position:relative; z-index:3}
 }
 .logo-sub{
   font-family:var(--mono); font-size:10px; letter-spacing:.14em;
-  text-transform:uppercase; color:var(--ink-3);
+  text-transform:uppercase; color:var(--ink-2);
   padding-left:10px; border-left:1px solid var(--line-2);
 }
 
 .nav{display:flex; gap:clamp(14px,2.2vw,30px)}
 .nav a{
   display:inline-flex; align-items:baseline; gap:7px;
-  color:var(--ink-2); text-decoration:none; font-size:13.5px;
+  color:#bcc2cf; text-decoration:none; font-size:13.5px;
   transition:color .2s;
 }
 .nav a i{
   font-family:var(--mono); font-style:normal;
-  font-size:9.5px; color:var(--ink-3); letter-spacing:.06em;
+  font-size:10px; color:#8d94a6; letter-spacing:.06em;
   transition:color .2s;
 }
 .nav a:hover{color:var(--ink)}
@@ -201,9 +201,9 @@ main,header,footer{position:relative; z-index:3}
 .tag{
   display:inline-flex; align-items:center; gap:9px;
   margin:0 0 clamp(24px,4vw,40px);
-  font-family:var(--mono); font-size:10.5px;
-  letter-spacing:.17em; text-transform:uppercase;
-  color:var(--ink-2);
+  font-family:var(--mono); font-size:11px;
+  letter-spacing:.16em; text-transform:uppercase;
+  color:#a9b0c0;
 }
 .live-dot{
   width:6px; height:6px; border-radius:50%; background:var(--mint);
@@ -229,7 +229,8 @@ main,header,footer{position:relative; z-index:3}
   filter:drop-shadow(0 14px 44px rgba(70,240,192,.16));
 }
 .title-glyph{
-  font-size:.22em; line-height:1; padding-top:.14em;
+  font-size:.17em; line-height:1; padding-top:.22em;
+  margin-right:-.01em;
   -webkit-text-fill-color:var(--mint);
   color:var(--mint);
   animation:spin 14s linear infinite;
@@ -271,7 +272,7 @@ main,header,footer{position:relative; z-index:3}
   font-family:var(--mono); font-size:clamp(19px,2.4vw,25px);
   color:var(--mint); letter-spacing:-.02em; font-variant-numeric:tabular-nums;
 }
-.hs-k{font-family:var(--mono); font-size:10px; letter-spacing:.12em; text-transform:uppercase; color:var(--ink-3); text-align:right}
+.hs-k{font-family:var(--mono); font-size:10.5px; letter-spacing:.1em; text-transform:uppercase; color:#98a0b2; text-align:right}
 
 .hero-actions{display:flex; flex-wrap:wrap; gap:12px; margin-top:clamp(34px,5vw,50px)}
 
@@ -413,7 +414,7 @@ main,header,footer{position:relative; z-index:3}
 .tool p{margin:0 0 16px; font-size:14px; line-height:1.62; color:var(--ink-2)}
 .tool-meta{
   font-family:var(--mono); font-size:9.5px;
-  letter-spacing:.1em; text-transform:uppercase; color:var(--ink-3);
+  letter-spacing:.1em; text-transform:uppercase; color:#9098aa;
 }
 
 @media (max-width:960px){ .tools{grid-template-columns:repeat(2,1fr)} }
@@ -445,7 +446,7 @@ main,header,footer{position:relative; z-index:3}
 .term-lights i:nth-child(2){background:#3a3524}
 .term-lights i:last-child{background:#1e3a32}
 .term-title{
-  font-family:var(--mono); font-size:11px; color:var(--ink-3);
+  font-family:var(--mono); font-size:11px; color:var(--ink-2);
   letter-spacing:.05em;
 }
 .term-state{
@@ -587,7 +588,7 @@ main,header,footer{position:relative; z-index:3}
 .rack-row:hover{background:rgba(70,240,192,.03)}
 .rk-k{
   font-family:var(--mono); font-size:10px;
-  letter-spacing:.13em; text-transform:uppercase; color:var(--ink-3);
+  letter-spacing:.13em; text-transform:uppercase; color:#98a0b2;
   white-space:nowrap;
 }
 .rk-v{font-size:14.5px; text-align:right; color:var(--ink)}

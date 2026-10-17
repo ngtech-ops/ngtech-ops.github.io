@@ -9,7 +9,7 @@
   --paper-deep: #e9e5db;
   --ink:        #141412;
   --ink-soft:   #55524a;
-  --ink-faint:  #8b8679;
+  --ink-faint:  #7c7767;
   --line:       #d8d2c4;
   --accent:     #d94f1e;
   --accent-ink: #a83a12;
@@ -229,6 +229,8 @@ code{font-family:var(--mono); font-size:.86em; background:rgba(20,20,18,.06); pa
   overflow:hidden;
   padding-block:15px;
   background:linear-gradient(90deg, rgba(21,20,18,.02), transparent 30%, transparent 70%, rgba(21,20,18,.02));
+  -webkit-mask-image:linear-gradient(90deg, transparent, #000 7%, #000 93%, transparent);
+  mask-image:linear-gradient(90deg, transparent, #000 7%, #000 93%, transparent);
 }
 .ticker-track{
   display:flex; gap:22px; width:max-content;

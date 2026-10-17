@@ -594,10 +594,27 @@ main,header,footer{position:relative; z-index:3}
 }
 .rk-v{font-size:14.5px; text-align:right; color:var(--ink)}
 
+.rk-v.redacted{
+  color:#3a4152;
+  letter-spacing:.08em;
+  font-family:var(--mono);
+  font-size:13.5px;
+  user-select:none;
+}
+.rk-v.redacted::selection{background:transparent}
+
 .rack-note{
   margin:clamp(26px,3.4vw,36px) 0 0;
   max-width:66ch; color:var(--ink-2); font-size:15.5px; line-height:1.7;
 }
+.rack-note.strong{
+  color:var(--ink); font-size:clamp(17px,2.1vw,20px);
+  letter-spacing:-.02em; line-height:1.5;
+  border-left:1px solid var(--mint);
+  padding-left:clamp(16px,2.4vw,26px);
+  max-width:52ch;
+}
+.rack-note .dim{color:var(--ink-2)}
 
 @media (max-width:620px){
   .rack-row{flex-direction:column; gap:4px; align-items:flex-start}

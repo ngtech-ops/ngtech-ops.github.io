@@ -23,11 +23,11 @@
   }
 
   var BOOT = [
-    ['noyau', 'hermes-agent · démarrage du service'],
-    ['contexte', 'profil chargé — Mamadou Saliou'],
-    ['mémoire', '5 518 fragments · index HNSW · pgvector'],
-    ['outils', 'terminal · fichiers · navigateur · recherche · cron'],
-    ['réseau', 'api.deepseek.com · 42 ms'],
+    ['noyau', 'démarrage…'],
+    ['contexte', 'profil chargé'],
+    ['mémoire', 'index local monté'],
+    ['outils', 'disponibles'],
+    ['réseau', 'liaison établie'],
     ['état', 'SAM opérationnel']
   ];
 
@@ -301,7 +301,7 @@
     }
 
     function promptLine(cmd) {
-      print('<span class="p">sam@contabo:~$</span> ' + escapeHtml(cmd));
+      print('<span class="p">sam@agent:~$</span> ' + escapeHtml(cmd));
     }
 
     function escapeHtml(s) {
@@ -338,14 +338,14 @@
       whoami: function () {
         print('SAM <span class="dim">— agent personnel, pas un chatbot.</span>');
         print('tourne pour <span class="key">Mamadou Saliou</span> · NG TECH · Dakar');
-        print('socle <span class="key">hermes-agent</span> · modèle <span class="key">deepseek-flash</span>');
+        print('socle <span class="key">maison</span> · modèle <span class="dim">non divulgué</span>');
         print('<span class="dim">règle : ne jamais prétendre avoir vérifié sans preuve.</span>');
       },
 
       uname: function () {
-        print('Linux contabo 6.8.0 x86_64 · Ubuntu 24.04.3 LTS');
-        print('4 vCPU AMD EPYC · 7,9 Go RAM · 100 Go SSD · <span class="warn">pas de GPU</span>');
-        print('PostgreSQL 16 + pgvector · Caddy · systemd');
+        print('<span class="warn">sam@agent : information non divulguée.</span>');
+        print('<span class="dim">Ce que je peux dire : une machine, un propriétaire, aucune dépendance à un tiers.</span>');
+        print('<span class="dim">Ce que je ne dirai pas : où, combien, avec quoi. Une page publique n\'est pas un inventaire.</span>');
       },
 
       date: function () {
@@ -357,11 +357,10 @@
       },
 
       memoire: function () {
-        print('<span class="dim">index HNSW · cosinus · modèle 384d</span>');
-        print('fragments   <span class="ok">5 518</span>   <span class="dim">(contexte, doc, dépôts, sessions)</span>');
-        print('volume      <span class="ok">472k</span> jetons lisibles · base 31 Mo');
-        print('latence     <span class="ok">~90 ms</span> par requête');
-        print('réindex     toutes les 2 h, incrémentale');
+        print('état        <span class="ok">montée</span> · locale, persistante');
+        print('contenu     <span class="dim">conversations, décisions, documents, dépôts</span>');
+        print('usage       interrogée <span class="ok">avant chaque réponse</span>');
+        print('export      <span class="dim">aucun · rien ne quitte la machine</span>');
         print('<span class="warn">un souvenir n\'est pas une preuve : le fichier source se relit.</span>');
       },
 
@@ -370,21 +369,21 @@
         ['système — debugger une cause racine, pas un symptôme',
          'publication — mettre une page en ligne et prouver son rendu',
          'dépôts NG TECH — droits, phases, vérification des chiffres',
-         'vidéo programmatique — NG Motion, benchmarks de rendu',
+         'vidéo programmatique — moteur maison, benchmarks de rendu',
          'documents — devis, facture, PDF, tableur',
          'mémoire — indexer et interroger le contexte durable',
          'veille — produire une synthèse sourcée et datée'
         ].forEach(function (s) { print('  <span class="ok">·</span> ' + s); });
-        print('<span class="dim">51 procédures au total.</span>');
+        print('<span class="dim">… et quelques dizaines d\'autres, moins spectaculaires.</span>');
       },
 
       ping: function () {
-        print('<span class="dim">envoi vers api.deepseek.com…</span>');
+        print('<span class="dim">envoi d\'une impulsion…</span>');
         var ms = [38, 41, 39, 43, 40];
         var i = 0;
         var go = function () {
           if (i >= ms.length) {
-            print('5 paquets, 5 reçus, <span class="ok">0 % perte</span> · min 38 ms · moy 40 ms');
+            print('5 paquets, 5 reçus, <span class="ok">0 % perte</span> · <span class="dim">latence non publiée</span>');
             return;
           }
           print('64 octets · temps <span class="ok">' + ms[i] + ' ms</span>');

@@ -301,7 +301,7 @@
     }
 
     function promptLine(cmd) {
-      print('<span class="p">sam@srv:~$</span> ' + escapeHtml(cmd));
+      print('<span class="p">sam@contabo:~$</span> ' + escapeHtml(cmd));
     }
 
     function escapeHtml(s) {
@@ -330,7 +330,7 @@
           ['clear', 'vider la console']
         ];
         rows.forEach(function (r) {
-          print('  <span class="ok">' + pad(r[0], 12) + '</span><span class="dim">' + r[1] + '</span>');
+          print('  <span class="ok">' + pad(r[0], 12) + '</span><span class="dim">' + r[1] + '</span>', 'help-row');
         });
         print('<span class="dim">Astuce : les flèches ↑ ↓ parcourent l\'historique.</span>');
       },

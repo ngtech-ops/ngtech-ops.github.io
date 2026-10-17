@@ -469,6 +469,7 @@ main,header,footer{position:relative; z-index:3}
 .term-body::-webkit-scrollbar-thumb{background:var(--line-2); border-radius:9px}
 
 .term-line{white-space:pre-wrap; word-break:break-word}
+.term-line.help-row{padding-left:14ch; text-indent:-14ch}
 .term-line .p{color:var(--mint)}
 .term-line .ok{color:var(--mint)}
 .term-line .dim{color:var(--ink-3)}
